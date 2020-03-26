@@ -3,8 +3,8 @@ import Recipe from './Recipe.jsx';
 import './App.css';
 
 export default function App() {
-    const APP_ID = '7e83b2ef';
-    const APP_KEY = '3ef9700099d3e0c5970104d8c4420587';
+    const APP_ID = process.env.REACT_APP_APP_ID;
+    const APP_KEY = process.env.REACT_APP_APP_KEY;
 
     const [searchTerm, setSearchTerm] = useState("");
     const [recipes, setRecipes] = useState([]);
